@@ -1,0 +1,92 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.wadah {
+  width: 100%;
+}
+.menu{
+    margin-left: 200px;
+    margin-right: 1150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-radius: 20%;
+}
+
+.menu nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.menu nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu a:hover{
+    background-color: #8b8989;
+}
+.menuMateri{
+  margin-left: 200px;
+  height: 2000px;
+  width: 1050px;
+  background-color: #2c2b2b;
+}
+.menuMateri ul li{
+  list-style-type: none;
+}
+.Pengenalan{
+  height: 300px;
+  width: 600px;
+  margin-left: 250px;
+  margin-right: 30px;
+  background-color: #2c2b2b;
+}
+.Pengenalan a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font: bold;
+}
+.Pengenalan a:hover{
+  color: #f4f4f4;
+  font-size: 20px;
+}
+.pengenalanGambar{
+  margin-top: 10px;
+  height: 250px;
+  width: 500px;
+}
+.tipedata{
+  height: 300px;
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-right: 30px;
+  background-color: #2c2b2b;
+}
+.tipedata a:hover{
+  color: #f4f4f4;
+  font-size: 20px;
+}
+.tipedata a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font: bold;
+}
