@@ -80,3 +80,13 @@ body {
   width: 900px;
   border-radius: 5%;
 }
+.gambarTree{
+  height: 30vh;
+  width: 60vw;
+  border-radius: 5%;
+}
+.gambarTree1{
+  height: 10px;
+  width: 15px;
+  border-radius: 5%;
+}
