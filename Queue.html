@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>QUEUE</h1></center>
+    <div class="menu">
+    <header>
+        <nav>
+          <ul>
+            <li>
+                <a href="tampilan2.html" style="color: black;">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+        src="https://cdn.lordicon.com/cnpvyndp.json"
+        trigger="hover"
+        style="width:50px;height:50px">BACK
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>QUEUE</h1>
+            <ul>
+                <li>
+                    <p>Queue (antrian) adalah struktur data dimana
+                        proses pengambilan dan penambahan
+                        element dilakukan pada ujung yang berbeda.</p>
+                </li>
+                <li>
+                    <p>Queue mengikuti konsep FIFO.</p>
+                </li>
+                <li>
+                    <p>FIFO (First In First Out) : elemen yang pertama
+                        masuk akan menjadi elemen yang pertama
+                        kali keluar.</p>
+                </li>
+            </ul>
+            <h3>ARTI QUEUE</h3>
+            <p>elemen pertama yang ditempat-
+                kan pada queue adalah yang pertama
+                dipindahkan.</p>
+            <h3>ENQUEUE</h3>
+            <ul>
+                <li>
+                    <p>Enqueue :</p>
+                    <p>yaitu proses penambahan elemen pada
+                        queue.</p>
+                </li>
+                <li>Elemen ditempatkan pada ujung (tail)</li>
+            </ul>
+
+            <h3>DEQUEUE</h3>
+            <ul>
+                <li>
+                    <p>Dequeue</p>
+                    <p>yaitu proses pengambilan elemen
+                        pada queue.</p>
+                </li>
+                <li>
+                    <p>Memindahkan elemen dari kepala
+                        (head) sebuah queue.</p>
+                </li>
+            </ul>
+            <p><strong>Penambahan dilakukan pada bagian
+                    belakang. Sedangkan pengambilan
+                    dilakukan pada bagian depan (element
+                    yang pertama masuk).</strong></p>
+
+            <h3>ILUSTRASI</h3>
+            <img class="gambarQueue" src="gambar/ilustrasiQueue.png" alt="">
+
+            <h3>KARAKTERISTIK QUEUE</h3>
+            <ul>
+                <li>
+                    <p>Elemen antrian yaitu item-item
+                        data yang terdapat di elemen
+                        antrian</p>
+                </li>
+                <li>
+                    <p>Front</p>
+                </li>
+                <li>
+                    <p>Rear</p>
+                </li>
+                <li>
+                    <p>Jumlah elemen pada antrian
+                        (Count)</p>
+                </li>
+                <li>
+                    <p>Status antrian</p>
+                </li>
+            </ul>
+            <h3>FRONT DAN REAR</h3>
+            <ul>
+                <li>
+                    <p><strong>Front</strong> : pointer bantu yang digunakan untuk
+                        menunjuk element yang paling depan.</p>
+                </li>
+                <li>
+                    <p><strong>Rear</strong> : pointer bantu yang digunakan untuk
+                        menunjuk element yang paling belakang.</p>
+                </li>
+            </ul>
+            <h3>OPERASI PADA QUEUE</h3>
+            <ul>
+                <li>
+                    <p><strong>Deklarasi</strong></p>
+                </li>
+                <ul>
+                    <li>
+                        <p>Proses yang harus dilakukan pertama kali adalah
+                            deklarasi/menyiapkan tempat.</p>
+                    </li>
+                    <li>
+                        <p>Langkah yang harus dilakukan adalah :</p>
+                    </li>
+                    <ul>
+                        <li>
+                            <p>Deklarasi class</p>
+                        </li>
+                        <li>
+                            <p>Deklarasi struktur data (menggunakan array atau linked
+                                list)</p>
+                        </li>
+                        <li>
+                            <p>Deklarasi pointer front dan rear</p>
+                        </li>
+                        <li>
+                            <p>Deklarasi variabel size untuk menyimpan besar array.</p>
+                        </li>
+                        <li>
+                            <p>Deklarasi variabel jumlah untuk mengetahui banyak item
+                                yang disimpan pada queue</p>
+                        </li>
+                    </ul>
+                </ul>
+                <li>
+                    <p><strong>Inisialisasi</strong></p>
+                </li>
+                <ul>
+                    <li>
+                        <p>Merupakan proses pemberian nilai awal.</p>
+                    </li>
+                    <li>
+                        <p>Pada Array :</p>
+                        <ol>
+                            <li>
+                                <p>Pembentukan obyek array beserta ukurannya.
+                                    antrian= new int[10];</p>
+                            </li>
+                            <p>(pembentukan obyek array yang memiliki 10 element, dan alamat
+                                obyek akan disimpan pada variabel bernama antrian)</p>
+                            <li>
+                                <p>Pemberian nilai awal pada variabel front=0 dan
+                                    belakang=-1.
+                                    front = 0;
+                                    rear=-1;</p>
+                            </li>
+                        </ol>
+
+                    </li>
+                    <li>
+                        <p>Pada Linked List:</p>
+                        <p>Proses inisialisasi dilakukan dengan
+                            memberikan nilai awal pada variabel head, tail
+                            front dan rear dengan nilai null.</p>
+                        <p>head = tail = front=rear= null;</p>
+                    </li>
+
+                </ul>
+                <li>
+                    <p><strong>Cek kosong</strong></p>
+                </li>
+                <ul>
+                    <li>
+                        <p>Operasi yang digunakan untuk mengecek kondisi
+                            queue dalam keadaan kosong.</p>
+                    </li>
+                    <li>
+                        <p>Pada array : menggunakan pengecekan pada variabel
+                            jumlah_item. Jika nilainya = 0 berarti queue dalam
+                            kondisi kosong.</p>
+                    </li>
+                    <li>
+                        <p>Pada linked list : dapat menggunakan pengecekan
+                            front atau rear jika nilainya null berarti queue
+                            kosong.</p>
+                    </li>
+                    <li>
+                        <p>Operasi ini harus dapat mengembalikan nilai true jika
+                            queue kosong dan false jika sebaliknya.</p>
+                    </li>
+                </ul>
+                <li>
+                    <p><strong>Cek penuh</strong></p>
+                </li>
+                <ul>
+                    <li>
+                        <p>Operasi yang hanya dapat diterapkan pada queue
+                            yang menggunakan array.</p>
+                    </li>
+                    <li>
+                        <p>Operasi ini digunakan untuk mengecek kondisi queue
+                            dalam keadaan penuh.</p>
+                    </li>
+                    <li>
+                        <p>Caranya : melihat nilai pada variabel jumlah item.
+                            Jika nilainya = size-1 (dimana size adalah ukuran
+                            array) maka dapat diindikasikan queue dalam kondisi
+                            penuh.</p>
+                    </li>
+                    <li><p>Operasi ini harus dapat mengembalikan nilai true jika
+                        queue penuh dan false jika sebaliknya.</p></li>
+                </ul>
+                <li>
+                    <p><strong>Penambahan</strong></p>
+                </li>
+                <li>
+                    <p><strong>Pengambilan</strong></p>
+                </li>
+                <li>
+                    <p><strong>Pengaksesan</strong></p>
+                </li>
+            </ul>
+            </div>
+        </div>
+</body>
+</html>

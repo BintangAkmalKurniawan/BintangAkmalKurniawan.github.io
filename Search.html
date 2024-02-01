@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>SEARCH</h1>
+    </center>
+    <div class="menu">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="tampilan2.html" style="color: black;">
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                src="https://cdn.lordicon.com/cnpvyndp.json"
+                trigger="hover"
+                style="width:50px;height:50px">BACK
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>SEARCH</h1>
+            <p>Struktur data search adalah cara untuk mencari data dalam sebuah program komputer. Ada banyak algoritma pencarian yang berbeda, seperti pencarian linier, pencarian biner, pencarian interpolasi, dan pencarian eksponensial.</p>
+            <p>Dalam dunia teknologi informasi, struktur data adalah komponen kunci untuk mengatur dan menyimpan informasi secara efisien. Hal ini memainkan peran penting dalam berbagai aplikasi, mulai dari basis data hingga algoritma pencarian. Struktur data pencarian, atau search data structure, merupakan salah satu jenis struktur data yang digunakan untuk mencari dan mengakses data dengan cepat dan efisien.
+                Dalam artikel ini, kita akan menjelajahi struktur data pencarian secara mendalam. Kita akan melihat berbagai jenisnya, seperti pohon pencarian biner, tabel hash, dan trie, serta mempelajari bagaimana cara kerjanya. Kita juga akan mengeksplorasi manfaat dan kekurangan dari masing-masing jenis struktur data pencarian tersebut.
+                Di era di mana data semakin besar dan kompleks, penguasaan terhadap struktur data pencarian adalah keterampilan yang tak ternilai harganya. Dengan pemahaman yang baik tentang cara kerjanya, Anda dapat meningkatkan performa aplikasi dan memungkinkan akses data yang lebih efisien.
+                Jadi, mari kita mulai belajar tentang struktur data pencarian dan meningkatkan pemahaman kita tentang bagaimana data dapat diorganisir dan diakses dengan efisien.
+                </p>
+                <h3>Pendahuluan ke Struktur Data Pencarian</h3>
+                <p>
+                    Dalam dunia komputasi, pencarian adalah operasi yang sering digunakan untuk menemukan data yang tepat di dalam struktur data. Pencarian yang efisien sangat penting untuk meningkatkan performa aplikasi dan menghemat waktu dalam pengaksesan data.
+Struktur data pencarian memungkinkan kita untuk mengatur data dengan cara yang memfasilitasi pencarian yang efisien. Ada berbagai jenis struktur data pencarian yang dapat digunakan, masing-masing dengan kelebihan dan kekurangan mereka sendiri.
+                </p>
+                <h3>Jenis-Jenis Struktur Data Pencarian</h3>
+                <h4>Algoritma Pencarian Linier</h4>
+                <p>Algoritma pencarian linier adalah salah satu metode pencarian paling sederhana. Pada algoritma ini, setiap elemen dalam struktur data diperiksa secara berurutan sampai elemen yang dicari ditemukan. Jika elemen tidak ditemukan, pencarian akan berakhir saat mencapai akhir struktur data.
+                    Algoritma pencarian linier cocok untuk struktur data yang tidak terurut atau jumlah datanya kecil. Namun, algoritma ini tidak efisien untuk struktur data yang besar, karena kompleksitas waktu pencarian adalah O(n), di mana n adalah jumlah elemen dalam struktur data.
+                    </p>
+                    <h4>Algoritma Pencarian Biner</h4>
+                    <p>Algoritma pencarian biner adalah metode pencarian yang efisien untuk struktur data yang terurut. Pada algoritma ini, struktur data dibagi menjadi dua bagian setiap kali pencarian dilakukan. Jika elemen yang dicari lebih kecil dari elemen tengah, pencarian dilanjutkan pada setengah bagian pertama. Jika elemen yang dicari lebih besar, pencarian dilanjutkan pada setengah bagian kedua. Proses ini berlanjut hingga elemen yang dicari ditemukan atau tidak ditemukan.
+                        Algoritma pencarian biner sangat efisien untuk struktur data yang terurut, karena kompleksitas waktu pencarian adalah O(log n), di mana n adalah jumlah elemen dalam struktur data. Namun, untuk menggunakan algoritma ini, struktur data harus terurut terlebih dahulu.
+                        </p>
+                        <h4>Hashing dan Tabel Hash</h4>
+                        <p>Hashing adalah teknik yang digunakan untuk mengubah data menjadi angka atau nilai hash yang unik. Nilai hash tersebut kemudian digunakan sebagai indeks dalam tabel hash, di mana data disimpan. Ketika mencari data, nilai hash dari data yang dicari digunakan untuk menentukan indeks di tabel hash, sehingga akses data menjadi lebih cepat.
+                            Tabel hash adalah struktur data yang efisien untuk pencarian dengan kompleksitas waktu rata-rata O(1) atau konstan. Namun, tabel hash memiliki kelemahan, yaitu kemungkinan terjadi tabrakan hash atau collision, di mana dua data memiliki nilai hash yang sama. Untuk mengatasi tabrakan hash, teknik seperti chaining atau open addressing dapat digunakan.
+                            </p>
+                            <h4>Algoritma Pencarian Berbasis Pohon</h4>
+                            <p>Algoritma pencarian berbasis pohon, seperti pohon pencarian biner, AVL tree, atau B-tree, adalah metode pencarian yang efisien untuk struktur data yang terurut. Pohon pencarian biner adalah salah satu jenis pohon pencarian yang paling umum digunakan. Pada pohon pencarian biner, setiap node memiliki maksimal dua anak, yaitu anak kiri dan anak kanan. Anak kiri memiliki nilai yang lebih kecil dari node induk, sedangkan anak kanan memiliki nilai yang lebih besar.
+                                Pohon pencarian biner memungkinkan pencarian yang efisien dengan kompleksitas waktu O(log n), di mana n adalah jumlah elemen dalam pohon. Selain itu, pohon pencarian biner juga mendukung operasi seperti penyisipan, penghapusan, dan pengurutan data.
+                                </p>
+                                <h3>Perbandingan Algoritma Pencarian yang Berbeda</h3>
+                                <p>Setiap jenis struktur data pencarian memiliki kelebihan dan kekurangan yang perlu dipertimbangkan saat memilih yang tepat untuk aplikasi atau kasus penggunaan tertentu. Berikut adalah perbandingan singkat dari beberapa jenis algoritma pencarian yang telah kita bahas sebelumnya:</p>
+                                <ul>
+                                    <li><p>Algoritma pencarian linier cocok untuk struktur data yang tidak terurut atau jumlah datanya kecil. Namun, algoritma ini tidak efisien untuk struktur data yang besar.</p></li>
+                                    <li><p>Algoritma pencarian biner sangat efisien untuk struktur data yang terurut, tetapi struktur data harus terurut terlebih dahulu sebelum menggunakan algoritma ini.</p></li>
+                                    <li><p>Tabel hash adalah struktur data yang efisien untuk pencarian dengan kompleksitas waktu rata-rata O(1) atau konstan, tetapi kemungkinan terjadi tabrakan hash.</p></li>
+                                    <li><p>Algoritma pencarian berbasis pohon adalah metode pencarian yang efisien untuk struktur data yang terurut, dan mendukung operasi tambahan seperti penyisipan, penghapusan, dan pengurutan data.</p></li>
+                                </ul>
+        <h2>Praktik Terbaik untuk Mengimplementasikan Struktur Data Pencarian</h2>
+        <p>Implementasi struktur data pencarian yang efisien membutuhkan pemikiran dan perencanaan yang matang. Berikut adalah beberapa praktik terbaik yang dapat Anda ikuti saat mengimplementasikan struktur data pencarian:</p>
+        <ol>
+            <li><p>Pilih jenis struktur data pencarian yang paling cocok untuk kasus penggunaan Anda, berdasarkan kebutuhan dan karakteristik data yang akan Anda olah.</p></li>
+            <li><p>Perhatikan kompleksitas waktu dan ruang dari masing-masing jenis struktur data pencarian. Pilih yang memiliki kompleksitas waktu dan ruang yang sesuai dengan kebutuhan aplikasi Anda.</p></li>
+            <li><p>Periksa dan pastikan konsistensi dan integritas data saat menggunakan struktur data pencarian. Pastikan bahwa data yang disimpan dan diakses dengan benar.</p></li>
+            <li><p>Lakukan pengujian dan evaluasi kinerja terhadap implementasi struktur data pencarian Anda. Hal ini akan membantu Anda mengidentifikasi dan mengatasi masalah atau bottleneck yang mungkin terjadi.</p></li>
+        </ol>
+        <h3>Kesimpulan</h3>
+        <p>Dalam dunia informasi yang semakin kompleks, pemahaman tentang struktur data pencarian sangat penting. Dengan menguasai berbagai jenis struktur data pencarian, Anda dapat meningkatkan performa aplikasi dan mengoptimalkan pengaksesan data Anda.
+            Dalam artikel ini, kita telah menjelajahi berbagai jenis struktur data pencarian, seperti algoritma pencarian linier, pencarian biner, hashing dan tabel hash, serta algoritma pencarian berbasis pohon. Kita juga telah membandingkan kelebihan dan kekurangan masing-masing jenis struktur data pencarian tersebut.
+            Dengan pemahaman yang mendalam tentang struktur data pencarian, Anda akan menjadi lebih efisien dalam mengatur dan mengakses data. Jadi, teruslah belajar dan eksplorasi tentang struktur data pencarian, dan tingkatkan keterampilan Anda dalam mengelola data dengan baik.
+            Terima kasih telah membaca!
+            </p>
+                            </div>
+    </div>
+</body>
+
+</html>

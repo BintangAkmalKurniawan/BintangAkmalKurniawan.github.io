@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>STACK</h1></center>
+    <div class="menu">
+    <header>
+        <nav>
+          <ul>
+            <li>
+                <a href="tampilan2.html" style="color: black;">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+        src="https://cdn.lordicon.com/cnpvyndp.json"
+        trigger="hover"
+        style="width:50px;height:50px">BACK
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>STACK</h1>
+            <p>Penyimpanan dan pengambilan data yang sangat
+                efektif apabila data yang terakhir masuk adalah data
+                yang akan diambil pertama kali.</p>
+            <p>Tumpukan memungkinkan akses ke satu item data
+                saja, yaitu item terakhir yang disisipkan.</p>
+            <p>Bila kita menghilangkan item ini maka kita bisa
+                mengakses ke sebelah item terakhir yang disisipkan,
+                dan seterusnya.</p>
+            <h3>Sejarah</h3>
+            <p>Tumpukan pertama kali diusulkan pada tahun
+                1955, dan kemudian dipatenkan pada tahun
+                1957, oleh Friedrich L. Bauer Jerman.</p>
+            <p>Konsep yang sama dikembangkan secara
+                independen, pada sekitar waktu yang sama,
+                oleh Leonard Charles Australia Hamblin.</p>
+            <h3>Pengertian</h3>
+            <p>Stack merupakan tumpukan data yang seolah-
+                olah diletakkan di atas data yang lain
+                Kita dapat menambahkan (menyisipkan)
+                data dan mengambil (menghapus) data
+                melalui ujung yang sama, yang disebut
+                sebagai ujung atas stack (top of stack).Stack bersifat LIFO (Last In First Out).Benda yang terakhir
+                masuk ke dalam
+                stack akan menjadi yang pertama
+                keluar dari </p>
+            <h3>Karakteristik Stack</h3>
+            <ul>
+                <li>
+                    <p>Elemen stack yaitu item-item data di ada di dalam
+                        elemen stack.</p>
+                </li>
+                <li>
+                    <p>Top (elemen puncak dari stack)</p>
+                </li>
+                <li>
+                    <p>Jumlah elemen pada stack.</p>
+                </li>
+                <li>
+                    <p>Status / kondisi stack.</p>
+                </li>
+            </ul>
+            <h3>KONDISI STACK</h3>
+            <p>KONDISI STACK
+                Kondisi stack yang perlu diperhatikan
+                adalah:</p>
+            <ul>
+                <li>
+                    <p>Penuh: bila elemen stack mencapai kapasitas
+                        maksimum. Pada kondisi ini tidak mungkin
+                        dilakukan penambahan ke stack.</p>
+                </li>
+
+                <li>
+                    <p>Kosong: bila tidak ada elemen di stack. Pada
+                        kondisi ini, tidak mungkin dilakukan
+                        pengambilan elemen dari stack</p>
+                </li>
+            </ul>
+            <h3>STACK REPRESENTASI STATIS</h3>
+            <ul>
+                <li>
+                    <p>Biasanya diimplementasikan dengan
+                        menggunakan array.</p>
+                </li>
+                <li>
+                    <p>Karena itu, stack dengan representasi
+                        statis dapat mengalami kondisi elemen
+                        penuh.</p>
+                </li>
+
+            </ul>
+            <h3>STACK REPRESENTASI DINAMIS</h3>
+            <ul>
+                <li>
+                    <p>Biasanya diimplementasikan dengan
+                        menggunakan pointer yang menunjuk pada
+                        elemen-elemen yang dialokasikan pada memori.</p>
+                </li>
+                <li>
+                    <p>Elemen ditambahkan akan menggunakan
+                        penambahan elemen pada awal stack (addfirst).</p>
+                </li>
+                <li>
+                    <p>Saat pengambilan atau penghapusan elemen
+                        menggunakan penghapusan di awal stack
+                        (delfirst).</p>
+                </li>
+            </ul>
+            <h3>ILUSTRASI</h3>
+            <img class="gambarStack" src="gambar/ilustrasiStack.png" alt="">
+            <br>
+            <img class="gambarStack" src="gambar/ilustrasiStack (2).png" alt="">
+
+            <h2>OPERATOR-OPERATOR DI
+                DALAM STACK</h2>
+            <ol>
+                <li>
+                    <h3>OPERASI PUSH</h3>
+                </li>
+                <p>Adalah operasi menambahkan elemen baru pada
+                    sebuah stack.Aturan penambahan stack:</p>
+                <ul>
+                    <li>
+                        <p>Sebagai kondisi awal ada sebuah stack yang telah
+                            memiliki beberapa elemen dengan elemen paling
+                            atas sebagai top.</p>
+                    </li>
+                    <li>
+                        <p>Dibuat sebuah elemen baru yang akan dimasukkan
+                            ke dalam stack.</p>
+                    </li>
+                    <li>
+                        <p>Elemen baru dimasukkan ke dalam stack.</p>
+                    </li>
+                    <li>
+                        <p>Penunjuk top pada stack diubah menunjuk ke
+                            elemen yang baru saja ditambahkan.</p>
+                    </li>
+                    <img class="gambarStack" src="gambar/pushStack.png" alt="">
+                </ul>
+                <li>
+                    <h3>OPERASI POP</h3>
+                </li>
+
+                <p>Adalah operasi mengambil sebuah elemen dari
+                    sebuah stack. Aturan mengambil sebuah elemen dari
+                    sebuah stack adalah sebagai berikut:</p>
+                <ul>
+                    <li>
+                        <p>Sebagai kondisi awal ada sebuah stack yang telah
+                            memiliki beberapa elemen dengan elemen paling atas
+                            sebagai top.</p>
+                    </li>
+                    <li>
+                        <p>Penunjuk top diubah menjadi menunjuk elemen di
+                            bawah elemen atas.</p>
+                    </li>
+                    <li>
+                        <p>Elemen atas diambil dari stack.</p>
+                    </li>
+                    <img class="gambarStack" src="gambar/popStack.png" alt="">
+                </ul>
+                <li>
+                    <h3>ISEMPTY</h3>
+                </li>
+                <p>Operator ini berfungsi untuk menentukan apakah
+                    suatu stack adalah stack kosong. Operasinya akan
+                    bernilai boolean, dengan definisi sebagai berikut :</p>
+                <li>
+                    <h3>ISFULL</h3>
+                </li>
+                <p>Operator ini berfungsi untuk menentukan apakah
+                    suatu stack adalah stack penuh. Operasinya akan
+                    bernilai boolean, dengan definisi sebagai berikut :</p>
+            </ol>
+            <h3>PENGGUNAAN STACK</h3>
+            <ul>
+                <li>
+                    <p>Dalam dunia komputer, penggunaan stack
+                        (tumpukan) merupakan suatu hal yang umum
+                        digunakan seperti untuk penentuan alamat memory,
+                        penempatan ruang data dan aplikasi lain.</p>
+                </li>
+                <li>
+                    <p>Aplikasi stack juga digunakan untuk berbagai macam
+                        keperluan seperti pengujian kalimat palindrome,
+                        penguji tanda kurung (matching parentheses), dan
+                        juga berfungsi sebagai konversi dari notasi infix
+                        menjadi notasi postfix.</p>
+                </li>
+            </ul>
+            </div>
+        </div>
+</body>
+</html>

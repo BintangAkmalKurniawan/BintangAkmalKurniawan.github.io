@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>GRAPH</h1>
+    </center>
+    <div class="menu">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="tampilan2.html" style="color: black;">
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                src="https://cdn.lordicon.com/cnpvyndp.json"
+                trigger="hover"
+                style="width:50px;height:50px">BACK
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>GRAPH</h1>
+
+            <h3>DEFINISI GRAPH</h3>
+            <p>Struktur data graf adalah kumpulan simpul dan sisi yang saling terhubung. Setiap simpul pada graf merepresentasikan objek atau entitas,
+                 sedangkan setiap sisi merepresentasikan hubungan antara dua simpul.
+                 Graf digunakan untuk merepresentasikan berbagai macam masalah, seperti jaringan sosial, jaringan transportasi, dan jaringan komputer.</p>
+            <p>Graph adalah kumpulan dari simpul dan busur yang secara matematis dinyatakan sebagai :  <b>G = (V, E)</b> </p>
+            <ul>
+                <li><p>G = Graph</p></li>
+                <li><p>V = Simpul atau Vertex, atau Node, atau Titik</p></li>
+                <li><p>E = Busur atau Edge, atau arc</p></li>
+            </ul>
+            <h3>Contoh graph :</h3>
+            <img class="gambarGraph" src="gambar/contohgraph.png" alt="">
+            <ul>
+                <li><p>V terdiri dari v1, v2, …, v5 </p></li>
+                <li><p>E terdiri dari e1, e2, … , e7 </p></li>
+            </ul>
+            <h3>Jenis-jenis Graph :</h3>
+            <ul>
+                <li><p>Sebuah graph mungkin hanya terdiri dari satu simpul </p></li>
+                <p><img class="gambarTree2" src="gambar/graph1.png" alt=""></p>
+                <li><p>Sebuah graph belum tentu semua simpulnya terhubung dengan busur</p></li>
+                <p><img class="gambarTree2"  src="gambar/graph2.png" alt=""></p>
+                <li><p>Sebuah graph mungkin mempunyai simpul yang tak terhubung dengan simpul yang lain </p></li>
+                <p><img class="gambarTree2"  src="gambar/graph3.png" alt=""></p>
+                <li><p>Sebuah graph mungkin semua simpulnya saling berhubungan </p></li>
+                <p><img class="gambarTree2"  src="gambar/graph4.png" alt=""></p>
+            </ul>
+            <h3>Graph Berarah dan Graph Tak Berarah :</h3>
+            <p>Graph tak berarah (undirected graph atau non-directed graph) : </p>
+            <ul>
+                <li><p>Urutan simpul dalam sebuah busur tidak dipentingkan. Mis busur e1 dapat disebut busur AB atau BA  </p></li>
+            </ul>
+            <p><img class="gambarGraph3" src="gambar/graph5.png" alt=""></p>
+            <p>Graph berarah (directed graph) :</p>
+            <ul>
+                <li><p>Urutan simpul mempunyai arti. Mis busur AB adalah e1 sedangkan busur BA adalah e8.                 </p></li>
+            </ul>
+            <p><img class="gambarGraph3" src="gambar/graph6.png" alt=""></p>
+            <p>Graph Berbobot (Weighted Graph)            </p>
+            <ul>
+                <li><p>Jika setiap busur mempunyai nilai yang menyatakan hubungan antara 2 buah simpul, maka busur tersebut dinyatakan memiliki bobot.</p></li>
+                <li><p>Bobot sebuah busur dapat menyatakan panjang sebuah jalan dari 2 buah titik, jumlah rata-rata kendaraan perhari yang melalui sebuah jalan, dll.</p></li>
+            </ul>
+            <h3>Graph Berbobot :</h3>
+            <p><img class="gambarGraph3" src="gambar/graph7.png" alt=""></p>
+            <p><img class="gambarGraph3" src="gambar/graph8.png" alt=""></p>
+            <p>Panjang busur (atau bobot) mungkin tidak digambarkan secara panjang yang proposional dengan bobotnya.
+                 Misal bobot 5 digambarkan lebih panjang dari 7.</p>
+            <h3>Istilah pada graph</h3>
+            <h4>Incident</h4>
+            <p>Jika e merupakan busur dengan simpul-simpulnya adalah v dan w yang ditulis e=(v,w), maka v dan w disebut “terletak”
+                 pada e, dan e disebut incident dengan v dan w. </p>
+            <h4>Degree (derajat), indegree dan outdegree</h4>
+            <p>Degree sebuah simpul adalah jumlah busur 	yang incident dengan simpul tersebut. </p>
+            <p>Indegree sebuah simpul pada graph berarah 	adalah jumlah busur 	yang kepalanya incident dengan simpul tersebut, atau jumlah busur yang “masuk” atau menuju simpul tersebut.            </p>
+            <p>Outdegree sebuah simpul pada graph berarah 	adalah jumlah busur 	yang ekornya incident dengan simpul tersebut, atau jumlah busur yang “keluar” atau berasal dari simpul tersebut.            </p>
+        <h3>Adjacent </h3>
+        <p>Pada graph tidah berarah, 2 buah simpul disebut adjacent bila ada busur yang menghubungkan kedua simpul tersebut. Simpul v dan w disebut adjacent.        </p>
+        <img class="gambar" src="gambar/graph9.png" alt="">
+                <p>Pada graph berarah, simpul v disebut adjacent dengan simpul w bila ada busur dari w ke v. </p>
+        <img src="gambar/graph10.png" alt="">
+        <h4>Successor dan Predecessor        </h4>
+        <p>Pada graph berarah, bila simpul v adjacent dengan simpul w, maka simpul v adalah successor simpul w, dan simpul w adalah predecessor dari simpul v. </p>
+        <h4>Path</h4>
+        <p>Sebuah path adalah serangkaian simpul-simpul yang berbeda, yang adjacent secara berturut-turut dari simpul satu ke simpul berikutnya. </p>
+        <img class="gambarGraph2" src="gambar/graph11.png" alt="">
+    </div>
+    </div>
+</body>
+
+</html>

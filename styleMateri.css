@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+.menu{
+    margin-left: 200px;
+    margin-right: 1130px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.menu header {
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-radius: 20%;
+}
+
+.menu nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.wadah{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #f4f4f4;
+}
+.container{
+    background-color: #e4e2e2;
+    margin-bottom: 20px;
+    padding: 5px 20px 30px 20px;
+}
+.judulMenu{
+    margin: 10px 30px 20px 80px;
+}
+.gambarTipedata1{
+  height: 300px;
+  height: 300px;
+  border-radius: 5%;
+}
+.gambarArray{
+  height: 300px;
+  width: 700px;
+  border-radius: 5%;
+}
+.kodeArray{
+  height: 300px;
+  width: 900px;
+  border-radius: 5%;
+}
+.gambarStack{
+  height: 300px;
+  width: 600px;
+  border-radius: 5%;
+}
+.gambarQueue{
+  height: 300px;
+  width: 600px;
+  border-radius: 5%;
+}
+.gambarLinkedlist{
+  height: 300px;
+  width: 900px;
+  border-radius: 5%;
+}
+.gambarTree{
+  height: 30vh;
+  width: 60vw;
+  border-radius: 5%;
+}
+.gambarTree1{
+  height: 10px;
+  width: 15px;
+  border-radius: 5%;
+}
+.gambarGraph{
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+}
+.gambarGraph3{
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+}
+.gambarGraph2{
+  height: 300px;
+  width: 1000px;
+  border-radius: 5%;
+}

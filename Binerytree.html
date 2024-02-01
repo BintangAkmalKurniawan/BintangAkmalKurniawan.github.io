@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>BINARY TREE</h1>
+    </center>
+    <div class="menu">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="tampilan2.html" style="color: black;">
+                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                src="https://cdn.lordicon.com/cnpvyndp.json"
+                trigger="hover"
+                style="width:50px;height:50px">BACK
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>TREE (STRUKTUR POHON &
+                KUNJUNGAN POHON BINER)</h1>
+
+            <h3>DEFINISI POHON (TREE)</h3>
+            <p>Dalam ilmu komputer, pohon biner digunakan untuk memodelkan struktur data yang memiliki hierarki atau urutan. 
+                Pohon biner terdiri dari simpul-simpul yang saling terhubung dengan garis-garis yang disebut sebagai cabang.
+                 Setiap simpul pada pohon biner memiliki paling banyak dua anak, yaitu anak kiri dan anak kanan.Pohon (Tree) 
+                 termasuk struktur non linear yang didefinisikan sebagai data
+                yang terorganisir dari suatu item informasi cabang yang saling terkait.</p>
+            <img class="gambarTree" src="gambar/contohTree.png" alt="">
+            <h3>Istilah – istilah Dalam Pohon</h3>
+            <ol>
+                <li>
+                    <p>Predesesor</p>
+                    <p>Node yang berada diatas node tertentu. </p>
+                    <p>(contoh : B predesesor dari E dan F) </p>
+                </li>
+                <li>
+                    <p>Succesor</p>
+                    <p>Node yang berada dibawah node tertentu. </p>
+                    <p>(contoh : E dan F merupakan succesor dari B)</p>
+                </li>
+                <li>
+                    <p>Ancestor</p>
+                    <p>Seluruh node yang terletak sebelum node tertentu dan terletak pada jalur yang sama. </p>
+                    <p>(contoh : A dan B merupakan ancestor dari F)</p>
+                </li>
+                <li>
+                    <p>Descendant</p>
+                    <p>Seluruh node yang terletak sesudah node tertentu dan terletak pada jalur yang sama. </p>
+                    <p>(contoh : F dan B merupakan ancestor dari A)</p>
+                </li>
+                <li>
+                    <p>Parent</p>
+                    <p>Predesesor satu level diatas satu node </p>
+                    <p>(contoh : B merupakan parent dari F)</p>
+                </li>
+                <li>
+                    <p>Child</p>
+                    <p>Succesor satu level dibawah satu node </p>
+                    <p>(contoh : F merupakan child dari B)</p>
+                </li>
+                <li>
+                    <p>Sibling</p>
+                    <p>Node yang memiliki parent yang sama dengan satu node </p>
+                    <p>(contoh : E dan F adalah sibling)</p>
+                </li>
+                <li>
+                    <p>Subtree</p>
+                    <p>Bagian dari tree yang berupa suatu node beserta descendant-nya </p>
+                    <p>(contoh : Subtree B, E, F dan Subtree D, G, H)</p>
+                </li>
+                <li>
+                    <p>Size</p>
+                    <p>Banyaknya node dalam suatu tree </p>
+                    <p>(contoh : gambar tree diatas memiliki size = 8)</p>
+                </li>
+                <li>
+                    <p>Height </p>
+                    <p>Banyaknya tingkat/level dalam suatu tree </p>
+                    <p>(contoh : gambar tree diatas memiliki height = 3)</p>
+                </li>
+                <li>
+                    <p>Root (Akar) </p>
+                    <p>Node khusus dalam tree yang tidak memiliki predesesor </p>
+                    <p>(Contoh : A)</p>
+                </li>
+                <li>
+                    <p>Leaf (Daun)</p>
+                    <p>Node-node dalam tree yang tidak memiliki daun </p>
+                    <p>(contoh : Node E,F,C,G,H)</p>
+                </li>
+                <li>
+                    <p>Degree (Derajat)</p>
+                    <p>Banyaknya child yang dimiliki oleh suatu node </p>
+                    <p>(contoh : Node A memiliki derajat 3, node B memiliki derajat 2) </p>
+                </li>
+            </ol>
+            <h3>ISTILAH-ISTILAH DASAR </h3>
+            <p>Pohon atau Tree adalah salah satu bentuk Graph terhubung yang tidak mengandung sirkuit.
+                Karena merupakan Graph terhubung, maka pada Pohon (Tree) selalu terdapat Path atau Jalur yang
+                menghubungkan setiap simpul dalam dua pohon
+                .Pohon (Tree) dapat juga didefinisikan sebagai kumpulan elemen yang salah satu elemennya disebut dengan
+                Akar (Root) dan sisa
+                elemen lain (Simpul) yang terpecah menjadi
+                sejumlah himpunan yang saling tidak berhubungan yang disebut dengan Subpohon (Subtree) atau cabang</p>
+            <h3>Sifat utama Pohon Berakar </h3>
+            <ol>
+                <li>
+                    <p>Jika Pohon mempunyai Simpul sebanyak n, maka banyaknya ruas atau edge adalah (n-1). </p>
+                </li>
+                <li>
+                    <p>Mempunyai Simpul Khusus yang disebut Root, jika Simpul tersebut memiliki derajat keluar >= 0, dan
+                        derajat masuk = 0. </p>
+                </li>
+                <li>
+                    <p>Mempunyai Simpul yang disebut sebagai Daun / Leaf, jika Simpul tersebut berderajat keluar = 0,
+                        dan berderajat masuk = 1.</p>
+                </li>
+                <li>
+                    <p>Setiap Simpul mempunyai Tingkatan / Level yang dimulai dari Root yang Levelnya = 1 sampai dengan
+                        Level ke - n pada daun paling bawah. Simpul yang mempunyai Level
+                        sama disebut Bersaudara atau Brother atau Stribling. .</p>
+                </li>
+                <li>
+                    <p>Pohon mempunyai Ketinggian atau Kedalaman atau Height, yang merupakan Level tertinggi </p>
+                </li>
+                <li>
+                    <p> Pohon mempunyai Weight atau Berat atau Bobot, yang banyaknya daun (leaf) pada Pohon. </p>
+                </li>
+                <li>
+                    <p> Banyaknya Simpul Maksimum sampai Level N adalah :</p>
+                    <p><img class="gambarTree2" src="gambar/tree1.png" alt=""></p>
+                </li>
+                <li>
+                    <p>Banyaknya Simpul untuk setiap Level I adalah :</p>
+                    <p><img class="gambarTree2" src="gambar/tree2.png" alt=""></p>
+                    <p>Hutan (Forest) adalah kumpulan Pohon yang tidak saling berhubungan</p>
+                </li>
+            </ol>
+            <p>Diketahui suatu bentuk Pohon Berakar T sebagai berikut :</p>
+            <img class="gambarTree" src="gambar/tree3.png" alt="">
+            <p>Pohon Diatas Mempunyai :</p>
+            <ul>
+                <li><p>Simpul sebanyak = 8 dan edge = n - 1 = 8 – 1 = 7</p></li>
+                <li><p>Root pada Pohon T diatas adalah Simpul P</p></li>
+                <li><p>Mempunyai daun (Leaf) = 4, yaitu = R, S, V dan W</p></li>
+                <li><p>Level (tingkatan) Pohon = 4 yaitu :</p>
+                    <p>Level 1 = Simpul P</p>
+                    <p>Level 2 = Simpul Q dan T</p>
+                    <p>Level 3 = Simpul R, S dan U</p>
+                    <p>Level 4 = Simpul V dan W</p>
+                </li>
+                <li><p>Ketinggian atau kedalaman = jumlah level  = 4</p></li>
+                <li><p>Weight atau berat atau bobot = jumlah daun = 4</p>
+                    <p>Dalam gambar Pohon T diatas dapat dibentuk  2 buah hutan (forest), bila simpul P dihilangkan, yaitu :    </p>
+                    <p>Hutan 1 :  Q,R,S	</p>
+                    <p>Hutan 2 :  T,U,V,W</p>
+                </li>
+                <li><p>Banyaknya Simpul Maksimum yang dapat terbentuk sampai Level 4 (bila simpul pada pohon dianggap penuh) adalah :</p>
+                    <p><img class="gambarTree" src="gambar/tree4.png" alt=""></p>
+                </li>
+                <li><p>Banyaknya Simpul maksimum untuk setiap Level I (bila simpul pada pohon dianggap penuh) adalah : Maksimum Simpul pada level 2 = 2 ( I – 1) = 2 (2-1) = 2	Maksimum Simpul pada level 3 = 2 (3-1) = 4 Maksimum Simpul pada level 4 = 2 (4-1) = 8</p>
+                    <p><img class="gambarTree" src="gambar/tree5.png" alt=""></p>
+                </li>
+            </ul>
+            <h3>POHON BINAR (BINARY TREE) </h3>
+            <p>Struktur ini biasanya digunakan untuk menyajikan data yang mengandung hubungan hirarkial antara elemen-elemennya.
+                Bentuk Pohon Berakar yang lebih mudah dikelola dalam komputer adalah Pohon Biner (Binary Tree) yang lebih 
+                dikenal sebagai Pohon Umum (General Tree) yang dapat didefinisikan sebagai kumpulan simpul yang mungkin kosong atau
+                 mempunyai akar dan dua Subpohon yang saling  terpisah yang disebut dengan Subpohon Kiri / 
+                cabang kiri (Left Subtree) dan Subpohon Kanan / cabang kanan (Right Subtree).</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

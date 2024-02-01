@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMateri.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>LINKEDLIST</h1></center>
+    <div class="menu">
+    <header>
+        <nav>
+          <ul>
+            <li>
+                <a href="tampilan2.html" style="color: black;">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+        src="https://cdn.lordicon.com/cnpvyndp.json"
+        trigger="hover"
+        style="width:50px;height:50px">BACK
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wadah">
+        <div class="container">
+            <h1>LINKEDLIST</h1>
+            <ul>
+                <li>
+                    <p>Linked List adalah salah satu bentuk struktur data, berisi kumpulan data (node) yang tersusun
+                        secara sekuensial, saling sambung-menyambung, dinamis dan terbatas.</p>
+                </li>
+                <li>
+                    <p>Linked List sering disebut juga Senarai Berantai</p>
+                </li>
+                <li>
+                    <p>Linked List saling terhubung dengan bantuan variabel pointer</p>
+                </li>
+                <li>
+                    <p>Masing-masing data dalam Linked List disebut dengan node (simpul) yang menempati alokasi
+                        memori secara dinamis dan biasanya berupa struct yang terdiri dari beberapa field.</p>
+                </li>
+                <li>
+                    <p>Linked List sebenarnya merupakan suatu tipe data tersendiri. Dibahasa Java, Linked Lis tbisa
+                        berupa suatu Class ataupun Record.</p>
+                </li>
+            </ul>
+            <h3>PERBADAAN ARRAY DAN LINGKEDLIST</h3>
+            <div class="arrayLinkedlist">
+                <h4>Array</h4>
+                <ul>
+                    <li>
+                        <p>Statis</p>
+                    </li>
+                    <li>
+                        <p>Penambahan, pengapusan data
+                            terbatas</p>
+                    </li>
+                    <li>
+                        <p>Random access</p>
+                    </li>
+                    <li>
+                        <p>Penghapusan Array tidak
+                            mungkin</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="linkedlistLinkedlist">
+                <h4>Linkedlist</h4>
+                <ul>
+                    <li>
+                        <p>Dinamis</p>
+                    </li>
+                    <li>
+                        <p>Penambahan pengapusan data
+                            tidak terbatas</p>
+                    </li>
+                    <li>
+                        <p>Sequential access</p>
+                    </li>
+                    <li>
+                        <p>Penghapusan Linked list mudah</p>
+                    </li>
+                </ul>
+            </div>
+            <h3>KELEBIHAN LINKEDLIST</h3>
+            <ul>
+                <li>
+                    <p>Akan lebih efektif jika kita menggunakan Linked List jika kita memerlukan suatu pengaksesan pada
+                        struktur data yang lebih dinamis.Konsep yang lebih cocok menggunakan linked list
+                        adalah:Stack,Queue,Tree,dan Graph.</p>
+                </li>
+                <li>
+                    <p>Mengapa? Karena sifat dinamis dari Linked List .Kita tidak perlu untuk mengetahui berapa block
+                        memory yang akan kita akses. Jadi, jika kita butuh block baru pada memory,tinggal menyisipkan
+                        pada kanan atau kiri list yang telah ada.</p>
+                </li>
+                <li>
+                    <p>Kita dapat memanfaatkan secara efektif konsep array dengan mengenal metode indexing pada
+                        array. Array merupakan struktur data statis yang mempunyai index penomoran Alamat variable
+                        array yang dimaksud.Jadi, secara umum, kita dapat mengaksesnya dengan lebih cepat.</p>
+                </li>
+                <li>
+                    <p>Konsep–konsep yang dapat memanfaatkan konsep indexing untuk mempercepat pengaksesannya
+                        adalah Sorting dan Searching.</p>
+                </li>
+                <li>
+                    <p>Hal ini dikarenakan oleh penomoran Alamat variable pada memory yang telah diketahui terlebih
+                        dahulu. Jadi, semisal kita menginginkan mencari variable dengan indeks tengah,kita bisa langsung
+                        menujuk ke indeksnya.</p>
+                </li>
+            </ul>
+            <h3>JENIS-JENIS LINKEDLIST</h3>
+            <ul>
+                <li>
+                    <h4>Singly Linked List</h4>
+                    <p>Setiap node pada linked list mempunyai field yang berisi pointer ke node berikutnya dan juga
+                        memiliki
+                        field yang berisi data.Akhir linked list ditandai dengan node terakhir akan menunjuk ke null
+                        yang akan
+                        digunakan sebagai kondisi berhenti saat pembacaan linked list</p>
+                    <img class="gambarLinkedlist" src="gambar/singlyLinkedlist.png" alt="">
+                </li>
+                <li>
+                    <h4>Double Linked List</h4>
+                    <p>Linked list dengan menggunakan pointer,dimana setiap node memiliki 3 field, yaitu:1 field pointer
+                        yang menunjuk ke pointer berikutnya, 1 field pointer yang menunjuk ke pointer sebelumnya dan
+                        field
+                        yang berisi data dari node tersebut.Pointer next dan prev-nya menunjuk ke null.</p>
+                    <img class="gambarLinkedlist" src="gambar/doubleLinkedlist.png" alt="">
+                </li>
+                <li>
+                    <h4>Single Circular Linked List</h4>
+                    <p>Single Linked List yang pointer next-nya menunjuk ke dirinya sendiri,jika terdiri dari beberapa
+                        node
+                        maka pointer terakhirnya akan menunjuk ke pointer terdepannya</p>
+                    <img class="gambarLinkedlist" src="gambar/circularLinkedlist.png" alt="">
+                </li>
+                <li>
+                    <h4>Double Circular Linked List</h4>
+                    <p>Double Linked List yang pointer next dan prev-nya menunjuk ke dirinya sendiri secara circular.
+                    </p>
+                    <img class="gambarLinkedlist" src="gambar/circular2Linkedlist.png" alt="">
+                </li>
+            </ul>
+            <h3>Bentuk Node Single Linked List</h3>
+            <ul>
+                <li>Pengertian :
+                    <p>Single : artinya field pointer-nya hanya satu buah saja dan satu arah serta pada akhir node,
+                        pointernya menunjuk NULL</p>
+                    <p>Linked List : artinya node-node tersebut saling terhubung satu sama lain</p>
+                    <p>Setiap node pada linked list mempunyai field yang berisi pointer ke node berikutnya, dan juga
+                        memiliki field yang berisi data.</p>
+                    <p>Node terakhir akan menunjuk ke NULL yang akan digunakan sebagai kondisi berhenti pada saat
+                        pembacaan isi linked list.</p>
+                </li>
+            </ul>
+            <h3>Pengimplementasian Linkedlist</h3>
+            <h4>Contoh Satu</h4>
+            <img class="gambarLinkedlist" src="gambar/contohLinkedlist1.png" alt="">
+            <br>
+            <h4>Contoh Dua</h4>
+            <img class="gambarLinkedlist" src="gambar/contohLinkedlist2.png" alt="">
+            <br>
+            <h4>Contoh Tiga</h4>
+            <img class="gambarLinkedlist" src="gambar/contohLinkedlist3.png" alt="">
+            <br>
+            <h4>Contoh Empat</h4>
+            <img class="gambarLinkedlist" src="gambar/contohLinkedlist4.png" alt="">
+            </div>
+        </div>
+</body>
+</html>
